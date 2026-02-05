@@ -63,7 +63,7 @@ h3 {
   padding: 1rem;
 }
 
-form {
+.box1 form {
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -71,7 +71,7 @@ form {
   justify-content: center;
 }
 
-input{
+.box1 input{
   border: none;
   outline: none;
   background-color: rgb(72, 72, 72);
@@ -95,4 +95,49 @@ input{
 .box1 button:active{
   scale: 0.93;
   background-color: yellowgreen;
+}
+
+.box2{
+  height: 200px;
+  width: 90%;
+  padding: 1rem;
+  background-color: red;
+  /* display: none; */
+}
+
+.box2 form{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2 input{
+  border: none;
+  outline: none;
+  background-color: rgb(72, 72, 72);
+  color: white;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  font-weight: 600;
+}
+
+.box2 button{
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  background-color: yellowgreen;
+  color: white;
+  transition: all ease-in-out 0.1s;
+}
+
+.box2 button:active{
+  scale: 0.9;
+}
+
+.box .edit{
+  background-color: green;
 }

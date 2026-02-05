@@ -46,15 +46,18 @@ app.delete('/node/:id', async (req, res) => {
     }
 })
 
-app.patch('/node/:id', async (req, res) => {
+app.put('/node/:id', async (req, res) => {
     const id = req.params.id
-    const { description } = req.body
+    const { title,description } = req.body
 
-    await nodemodel.findByIdAndUpdate(id, { description })
+    await nodemodel.findByIdAndUpdate(id, { title,description })
 
     res.status(200).json({
         message: 'updated sucessfully...'
     })
 })
 
+app.use('*name', (req,res)=>{
+    res.send('this is wild card route')
+})
 module.exports = app
