@@ -7,7 +7,7 @@ const App = () => {
   const [data, setdata] = useState([])
 
   function fetchData() {
-    axiose.get('http://localhost:3000/api/node')
+    axiose.get('https://backend-1-dz14.onrender.com/api/node')
       .then((res) => {
         setdata(res.data.node)
       })
@@ -21,7 +21,7 @@ const App = () => {
 
     const { title, description } = e.target.elements
 
-    axiose.post('http://localhost:3000/api/node', {
+    axiose.post('https://backend-1-dz14.onrender.com/api/node', {
       title: title.value,
       description: description.value
     })
@@ -34,7 +34,7 @@ const App = () => {
   }
 
   function handleDelete(noteid) {
-    axiose.delete('http://localhost:3000/api/node/' + noteid)
+    axiose.delete('https://backend-1-dz14.onrender.com/api/node/' + noteid)
       .then((res) => {
         fetchData()
       })
@@ -44,7 +44,7 @@ const App = () => {
     const updateTitle = prompt('enter title')
     const updateDescription = prompt('enter description..')
 
-    axiose.put('http://localhost:3000/api/node/' + noteid, {
+    axiose.put('https://backend-1-dz14.onrender.com/api/node/' + noteid, {
       title: updateTitle,
       description: updateDescription
     })
