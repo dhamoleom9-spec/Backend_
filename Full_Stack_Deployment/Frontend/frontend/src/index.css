@@ -1,0 +1,109 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(74, 74, 74);
+}
+
+.box1{
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box1 form{
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.box1 form input{
+  padding: 0.7rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  background-color: rgb(105, 103, 103);
+  color: black;
+  outline: none;
+  border-radius: 1rem;
+}
+.box1 form button{
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  background-color: yellowgreen;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.box1 form button:active{
+  scale: 0.95;
+}
+.box1 h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: 0.5;
+  color: whitesmoke;
+  margin-right: 2rem;
+  display: none;
+  transition: all 1s;
+}
+.box1:hover h1{
+  display: block;
+  scale: 1.1;
+}
+.box2{
+  min-height: 85%;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.box2 .box{
+  max-height: 120px;
+  min-width: 200px;
+  background-color: rgb(104, 104, 104);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.box2 .box .but{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.box2 .box .but button{
+  padding: 0.2rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  transition: all ease-in-out 0.2s;
+}
+.box2 .box .but .del{
+  background-color: red;
+  color: white;
+}
+.box2 .box .but .edit{
+  background-color: green;
+  color: white;
+}
+
+.box2 .box .but button:active{
+  scale: 1.1;
+}
